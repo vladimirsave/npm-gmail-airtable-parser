@@ -1,0 +1,70 @@
+html, body {
+  min-height: 100%;
+}
+
+.container {
+  text-align: center;
+}
+
+.heading {
+  font-size: 72px;
+  margin-top: 200px;
+}
+
+.heading-2 {
+  margin-top: 60px;
+}
+
+.bi-google {
+  margin-bottom: 4px;
+}
+
+.cta {
+  margin-top: 40px;
+}
+
+.max-height{
+  height: 100vh;
+}
+
+.form{
+  position: relative;
+  max-width: 500px;
+  margin: 20px auto 60px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  color: #9ca3af;
+}
+
+.btn-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 16px;
+  border-radius: 0 10px 10px 0;
+}
+
+.btn-search:hover {
+  box-shadow: 1px 2px 2px #9ca3af;
+}
+
+.form-input {
+  height: 46px;
+  text-indent: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+}
+
+.form-input:focus{
+  box-shadow: 1px 2px 6px #9ca3af;
+  border: 1px solid #d1d5db;
+}
+
+.list-container {
+  width: 800px;
+  margin: 60px auto;
+}
