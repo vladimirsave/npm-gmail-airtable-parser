@@ -1,4 +1,4 @@
-![image](https://github.com/vladimirsave/npm-gmail-airtable-parser/assets/113595741/b0f05742-781d-4e4b-8fd8-b1809c548e37)## About
+## About
 This is a NodeJS application which uses Google OAuth and Airtable to authenticate users and fetches attachments from their Gmail account based on the search query. The attachments are downloaded on the server and the unique attachment id is stored in the MongoDB database. We can then download the attachment by providing the attachment id.
 
 ## Prerequisites
