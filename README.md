@@ -1,8 +1,5 @@
-## About
+![image](https://github.com/vladimirsave/npm-gmail-airtable-parser/assets/113595741/b0f05742-781d-4e4b-8fd8-b1809c548e37)## About
 This is a NodeJS application which uses Google OAuth and Airtable to authenticate users and fetches attachments from their Gmail account based on the search query. The attachments are downloaded on the server and the unique attachment id is stored in the MongoDB database. We can then download the attachment by providing the attachment id.
-
-### UI Snapshot
-![UI Preview](snapshots/gmail-attachment-preview.png)
 
 ## Prerequisites
 ### Setting up MongoDB Project
@@ -44,6 +41,45 @@ https://app.pdf.co/
 - Open terminal, go to the directory and run `npm i`
 - Make sure followed all the above steps and added all the variable as specified in the `.sample.env` inside the `.env` file
 - Run `npm run dev` which will start a Nodejs server at `localhost:3000`
+
+## Specification
+Objective:
+The objective of this project is to automate the process of extracting multiple values from PDF documents received via email, and then load the extracted data into Airtable. 
+
+Requirements:
+Email Monitoring:
+The system should monitor the designated email inbox for incoming messages.
+The system should periodically check for new emails and trigger the automation process when an email with the specified name is detected.
+
+Document Identification:
+The automation system should be capable of identifying the specific subject of the email that contains the PDF document to be processed.
+A rule or condition should be set up to trigger the extraction process based on the identified email.
+
+PDF Data Extraction:
+Utilize a PDF parsing library to extract the relevant information(Date, Fund, Class, Share Value) from the PDF documents.
+Define the specific numbers to be extracted based on their location, formatting, or any other identifiable pattern within the document.
+
+Data Manipulation and Excel Integration:
+(If necessary) perform any necessary cleaning or formatting on the extracted numbers.
+Define the structure of the Excel table, including specific columns, where the extracted numbers will be inserted.
+Write the extracted data into the designated cells of the Excel spreadsheet.
+
+Airtable Integration:
+Connect to the Airtable API using the required authentication credentials.
+Define the specific Airtable base and table where the data should be loaded.
+Utilize the Airtable API to update records in the designated table.
+
+Security Considerations:
+Ensure the system handles sensitive data securely and follows best practices for data protection, encryption, and access control.
+Use secure methods to authenticate with the email server and Airtable API.
+Implement appropriate error handling and logging mechanisms to capture and handle any potential issues or exceptions during the automation process.
+
+Deliverables:
+Detailed documentation on how to set up and configure the system.
+Instructions on how to install any required dependencies or libraries.
+Guidance on how to schedule and monitor the automation process.
+Security recommendations and considerations for handling sensitive data.
+
 
  
 
